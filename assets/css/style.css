@@ -5,31 +5,12 @@ body {
 
 .maincontainer {
   width:960px;
-  margin: auto;
+  margin:0 auto;
 
 }
 
-
-.header_container {
-  
-}
-
-.nav {
-  text-decoration:none;  
-  list-style-type:none;
-  
-  width: 320px;
-  float:right;
-  padding: 20px;
-}
-.nav li {
-  display: inline;
-  margin:0 5px 0 0;
-  font-size: 1.4em;
-  color:#777777;
-}
-
-.name{
+/*Name Section*/
+.name {
  font-family: 'Georgia', Times, Times New Roman, serif;
  color:#ffffff;
  background-color: #4aaaa5;
@@ -37,46 +18,188 @@ body {
  float:left; 
  padding:20px;
 }
+/*End Name Section*/
 
-h1 h2 {
+/* navigation bar*/
+.nav {
+  width: 320px;
+  float:right;
+  padding: 20px;
+}
+
+.nav ul{
+  list-style-type:none;
+
+}
+
+.nav a{
+  text-decoration: none;
+}
+.nav li {
+   
+  display: inline;
+  margin:0 5px 0 0;
+  font-size: 1.4em;
+  color:#777777;
+}
+/* end navigation bar*/
+
+
+
+h1 {
   font-family: 'Georgia', Times, Times New Roman, serif;
+  
 }
 
 
-.content_container {
-  margin-top: 20px;
-  padding:auto;
-}
 
+
+/*About Me Section*/
 .about_me {
   float:left;
-  width: 650px;
-  background-color: #ffffff;
-  }
+  width:650px;
+  background-color:#ffffff;  
+}
 
 .about_me img {
   float:left;
   margin-right:10px;
   margin-left:10px;
-  padding:10px;
+  
 } 
 .about_me p {
-  padding:5px;
-  margin:5px 2px 5px 2px;
-  color:#777777; 
-  border:1px solid;
-  
-}
 
+  color:#777777; 
+}
 .about_me h1 {
   padding:10px;
   color:#4aaaa5;
+}
+/*End About Me*/
+.contact {
+  float:left;
+  width: 650px;
+  background-color: #ffffff;
+  font-weight: bold;
+
+}
+
+.contact h1 {
+    padding:10px;
+    color:#4aaaa5;
+}
+
+/* Styles and layout for Contact Section of the form */
+
+
+form {
+  padding:0 10px 0 10px;
+  color:#777777; 
+  line-height: 25px; 
+  font-size: 14pt;  
+}
+
+
+input[type="text"] {
+  font-size: 1.2em;
+  margin-top: 5px;
+  margin-bottom: 5px; 
+  width:70%;
+}
+input[type="submit"]{
+  padding:10px;
+  background-color: #4aaaa5;
+  color:#ffffff;
+  border:0;
+  font-size:16pt;
+  margin-bottom: 10px;
+
+}
+textarea {
+  width:100%;
+  height: 200px;
+  font-size:1.2em;
+  color:#ffffff;
+}
+
+
+
+
+/* End of Form Styling */
+
+
+/*Portfolio Boxes*/
+
+/*Adding captions to placeholder boxes*/
+
+/* tells images to add margins */
+#imagewithcaption .captiontext:nth-child(odd){
+  margin-right:10px;
+}
+
+
+#imagewithcaption .captiontext:nth-child(even){
+  margin-left:10px;
+}
+
+/*Holds all the images with captions*/
+.portofoliocontainer {
+  margin:20px;
+  padding-top: 20px;
+  color:#777777;
+
+}
+
+/*Holds all the images*/
+#allimages {
+  margin-left:35px
+  margin-bottom: 5px;
+
   
 }
+.captiontext {
+  width:47%;
+  position:relative;
+  margin-bottom:20px;
+  float:left;
+}
+.captiontext p {
+  position:absolute;
+  background-color: #4aaaa5; 
+  width: 100%;  
+  bottom:15px;
+  color:white;
+  text-align: center; 
+}
+
+/*.captionimages {
+  margin-left:35px;
+  position: relative; 
+}*/
+.recentwork{
+  width: 100%;
+}
+/*End captions to placeholder*/
+
+/*Portfolio Section*/
+.portfolio {
+  float:left;
+  width: 650px;
+  background-color: #ffffff;
+  color:#777777;
+}
+.portfolio h1 {
+  padding:10px;
+  color:#4aaaa5;
+}
+
+/* End Portfolio header*/
+
+/*Connect with me section*/
 .connect_with_me {
   width:270px;
   float:right;
-  margin: auto;
+  margin:auto;
   background-color: #ffffff;
 }
 
@@ -90,7 +213,9 @@ h1 h2 {
   margin:0 auto 0 auto;
   color:#4aaaa5;
 }
+/*End Connect with me*/
 
+/*Footer Section*/
 .footer{
   clear:both;
   background-color: #666666;
@@ -104,27 +229,4 @@ h1 h2 {
   display: block;
   clear:both;
 }
-
-.contact {
-  float:left;
-  width: 650px;
-  background-color: #ffffff;
-  color:#4aaaa5;
-}
-
-/* Styles and layout for Contact Section of the form */
-
-form {
-  margin: 0 auto;
-  padding:10px;
-  color:#4aaaa5;
-}
-input[type=text] {
-  width: 80%;
-  font-size: 1.2em;
-}
-textarea {
-  width:100%;
-  height: 200px;
-  font-size:1.2em;
-}
+/*End Footer Section*/
